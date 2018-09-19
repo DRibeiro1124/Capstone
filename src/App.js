@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './components/Header';
 
-import Dummy from './components/Dummy';
 
 class App extends Component {
 
@@ -18,7 +17,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Dummy />
         <p className="App-intro">
           hello, world!
         </p>
