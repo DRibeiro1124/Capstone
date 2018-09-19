@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import styled from 'styled-components'
 import EPL_logo from '../images/EPL_Logo1.png'
 import Arsenal from '../images/ArsenalLogo.svg'
@@ -99,6 +100,8 @@ class Header extends Component {
                     <a href="https://www.whufc.com/"><img src={WestHamUnited} className="team-logo" alt="logo" /></a>
                     <a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Wolverhampton} className="team-logo" alt="logo" /></a>
                 </section>
+
+                <div className="fuuut"></div>
             </HeaderWrapper>
         );
     }
