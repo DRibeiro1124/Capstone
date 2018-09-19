@@ -7,6 +7,9 @@ import Brighton from '../images/BrightonLogo.svg'
 import Burnley from '../images/BurnleyLogo.svg'
 import CardiffCity from '../images/CardiffCityLogo.svg'
 import Chelsea from '../images/ChelseaLogo.svg'
+import CrystalPalace from '../images/CrystalPalaceLogo.svg'
+import Everton from '../images/EvertonLogo.svg'
+import Fulham from '../images/FulhamLogo.svg'
 
 
 const HeaderWrapper = styled.div`
@@ -45,6 +48,9 @@ class Header extends Component {
                 <a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Burnley} className="team-logo" alt="logo" /></a>
                 <a href="https://www.cardiffcityfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={CardiffCity} className="team-logo" alt="logo" /></a>
                 <a href="https://www.chelseafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Chelsea} className="team-logo" alt="logo" /></a>
+                <a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={CrystalPalace} className="team-logo" alt="logo" /></a>
+                <a href="http://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Everton} className="team-logo" alt="logo" /></a>
+                <a href="http://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Fulham} className="team-logo" alt="logo" /></a>
                 
             </HeaderWrapper>
         );
