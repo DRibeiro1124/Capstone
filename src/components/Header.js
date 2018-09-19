@@ -10,12 +10,23 @@ import Chelsea from '../images/ChelseaLogo.svg'
 import CrystalPalace from '../images/CrystalPalaceLogo.svg'
 import Everton from '../images/EvertonLogo.svg'
 import Fulham from '../images/FulhamLogo.svg'
+import HuddersfieldTown from '../images/HuddersfieldTownLogo.svg'
+import LeicesterCity from '../images/LeicesterCityLogo.svg'
+import Liverpool from '../images/LiverpoolLogo.svg'
+import ManchesterCity from '../images/ManchesterCityLogo.svg'
+import ManchesterUnited from '../images/ManchesterUnitedLogo.svg'
+import NewcastleUnited from '../images/NewcastleUnitedLogo.svg'
+import Southampton from '../images/SouthamptonLogo.svg'
+import TottenhamSpurs from '../images/TottenhamSpursLogo.svg'
+import Watford from '../images/WatfordLogo.svg'
+import WestHamUnited from '../images/WestHamUnitedLogo.svg'
+import Wolverhampton from '../images/WolverhamptonLogo.svg'
 
 
 const HeaderWrapper = styled.div`
     margin: auto;
-    // background-color: #75fa93;
-    background-color: #32063A;
+    background-color: #75fa93;
+    // background-color: #32063A;
     display: flex;
     justify-content: space-between;
     
@@ -29,11 +40,16 @@ const HeaderWrapper = styled.div`
         display: flex;
         background-color: #75fa93
     }
-
+    
     .team-logo {
-        height: 2em;
-        display: flex;
+        height: 3em;
+                            display: flex;
         justify-content: space-around;
+    }
+    
+    a {
+        justify-content: center;
+        align-self: center;
     }
 `
 
@@ -51,7 +67,18 @@ class Header extends Component {
                 <a href="http://www.cpfc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={CrystalPalace} className="team-logo" alt="logo" /></a>
                 <a href="http://www.evertonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Everton} className="team-logo" alt="logo" /></a>
                 <a href="http://www.fulhamfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Fulham} className="team-logo" alt="logo" /></a>
-                
+                <a href="https://www.htafc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={HuddersfieldTown} className="team-logo" alt="logo" /></a>
+                <a href="https://www.lcfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={LeicesterCity} className="team-logo" alt="logo" /></a>
+                <a href="https://www.liverpoolfc.com/welcome-to-liverpool-fc"><img src={Liverpool} className="team-logo" alt="logo" /></a>
+                <a href="https://www.mancity.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={ManchesterCity} className="team-logo" alt="logo" /></a>
+                <a href="http://www.manutd.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={ManchesterUnited} className="team-logo" alt="logo" /></a>
+                <a href="https://www.nufc.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={NewcastleUnited} className="team-logo" alt="logo" /></a>
+                <a href="https://southamptonfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Southampton} className="team-logo" alt="logo" /></a>
+                <a href="http://www.tottenhamhotspur.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={TottenhamSpurs} className="team-logo" alt="logo" /></a>
+                <a href="https://www.watfordfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Watford} className="team-logo" alt="logo" /></a>
+                <a href="https://www.whufc.com/"><img src={WestHamUnited} className="team-logo" alt="logo" /></a>
+                <a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Wolverhampton} className="team-logo" alt="logo" /></a>
+
             </HeaderWrapper>
         );
     }
