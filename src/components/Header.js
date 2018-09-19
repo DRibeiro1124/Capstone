@@ -43,7 +43,7 @@ const HeaderWrapper = styled.div`
     
     .team-logo {
         height: 3em;
-                            display: flex;
+        display: flex;
         justify-content: space-around;
     }
     
@@ -51,6 +51,16 @@ const HeaderWrapper = styled.div`
         justify-content: center;
         align-self: center;
     }
+
+    // .team-logo {
+    //     animation: App-logo-spin infinite 20s linear;
+    //     height: 80px;
+    //   }
+
+    // @keyframes team-logo-spin {
+    //     from { transform: rotate(0deg); }
+    //     to { transform: rotate(360deg); }
+    //   }
 `
 
 class Header extends Component {
@@ -78,7 +88,7 @@ class Header extends Component {
                 <a href="https://www.watfordfc.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Watford} className="team-logo" alt="logo" /></a>
                 <a href="https://www.whufc.com/"><img src={WestHamUnited} className="team-logo" alt="logo" /></a>
                 <a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Wolverhampton} className="team-logo" alt="logo" /></a>
-
+                
             </HeaderWrapper>
         );
     }
