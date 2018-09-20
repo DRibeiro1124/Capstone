@@ -26,7 +26,7 @@ import Wolverhampton from '../images/WolverhamptonLogo.svg'
 
 const HeaderWrapper = styled.div`
     margin: auto;
-    // these are the three main colors that are going to be used
+    // these are the 4 main colors that are going to be used
     background-color: #75fa93;
     // background-color: #32063A;
     // background-color: #D62E55;
@@ -55,16 +55,6 @@ const HeaderWrapper = styled.div`
         justify-content: center;
         align-self: center;
     }
-
-    // .team-logo {
-    //     animation: App-logo-spin infinite 20s linear;
-    //     height: 80px;
-    //   }
-
-    // @keyframes team-logo-spin {
-    //     from { transform: rotate(0deg); }
-    //     to { transform: rotate(360deg); }
-    //   }
 
     .teams {
         display: flex;
@@ -101,7 +91,6 @@ class Header extends Component {
                     <a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Wolverhampton} className="team-logo" alt="logo" /></a>
                 </section>
 
-                <div className="fuuut"></div>
             </HeaderWrapper>
         );
     }
