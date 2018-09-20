@@ -16,7 +16,13 @@ ul {
 
 li {
     font-family: 'Comfortaa', cursive;
+    font-weight: 900;
     
+}
+
+li:hover {
+    // background: yellow;
+    color: yellow;
 }
 
 `
