@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ManchesterCityLogo from '../../images/ManchesterCityLogo.svg'
+import TottenhamSpursLogo from '../../images/TottenhamSpursLogo.svg'
 import styled from 'styled-components'
 
 const TeamWrapper = styled.div`
@@ -14,8 +14,8 @@ const TeamWrapper = styled.div`
     border-radius: 1em;
     height: 14em;
     width: 12em;
-    background: #A0C4E6;
-    color: #000;
+    background: #121834;
+    color: #F7F9FC;
     
 }
 
@@ -36,14 +36,14 @@ const TeamWrapper = styled.div`
 
 
 
-class ManchesterCity extends Component {
+class Tottenham extends Component {
     render() {
         return (
 
             <TeamWrapper>
                 <div className="main">
-                    <p>Manchester City</p>
-                    <img src={ManchesterCityLogo} className="team-logo" alt="logo" />
+                    <p>Tottenham Spurs</p>
+                    <img src={TottenhamSpursLogo} className="team-logo" alt="logo" />
                     <p>Football Club</p>
                 </div>
             </TeamWrapper>
@@ -51,4 +51,5 @@ class ManchesterCity extends Component {
     }
 }
 
-export default ManchesterCity;
+export default Tottenham;
+

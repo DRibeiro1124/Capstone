@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ManchesterCityLogo from '../../images/ManchesterCityLogo.svg'
+import ManchesterUnitedLogo from '../../images/ManchesterUnitedLogo.svg'
 import styled from 'styled-components'
 
 const TeamWrapper = styled.div`
@@ -14,8 +14,8 @@ const TeamWrapper = styled.div`
     border-radius: 1em;
     height: 14em;
     width: 12em;
-    background: #A0C4E6;
-    color: #000;
+    background: #BB2F26;
+    color: #FCE84E;
     
 }
 
@@ -28,7 +28,7 @@ const TeamWrapper = styled.div`
 
 .team-logo {
     height: 6em;
-    background: #F7F9FC;
+    background: #FCE84E;
     padding: 5px;
 }
 
@@ -36,19 +36,19 @@ const TeamWrapper = styled.div`
 
 
 
-class ManchesterCity extends Component {
+class ManchesterUnited extends Component {
     render() {
         return (
 
             <TeamWrapper>
                 <div className="main">
-                    <p>Manchester City</p>
-                    <img src={ManchesterCityLogo} className="team-logo" alt="logo" />
+                    <p>Manchester United</p>
+                    <img src={ManchesterUnitedLogo} className="team-logo" alt="logo" />
                     <p>Football Club</p>
                 </div>
             </TeamWrapper>
         );
     }
-}
+} 
 
-export default ManchesterCity;
+export default ManchesterUnited;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const NavBarWrapper = styled.div `
+const NavBarWrapper = styled.div`
 ul {
     display: flex;
     justify-content: space-around;
@@ -35,7 +35,7 @@ class NavBar extends Component {
                         <li>Managers</li>
                     </ul>
                 </div>
-                
+
             </NavBarWrapper>
         );
     }
