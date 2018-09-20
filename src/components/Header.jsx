@@ -40,7 +40,8 @@ const HeaderWrapper = styled.div`
     }
     
     .EPL-logo {
-        height: 9em;
+        height: 11em;
+
     }
     
     .team-logo {
@@ -48,6 +49,7 @@ const HeaderWrapper = styled.div`
         display: flex;
         justify-content: space-around;
     }
+    
     
     a {
         display: flex;
@@ -59,6 +61,10 @@ const HeaderWrapper = styled.div`
         justify-content: space-around;
         flex-wrap: wrap;
         width: auto;
+    }
+
+    .intro {
+        padding: 0
     }
 
 `
@@ -90,6 +96,9 @@ class Header extends Component {
                     <a href="https://www.whufc.com/"><img src={WestHamUnited} className="team-logo" alt="logo" /></a>
                     <a href="https://www.wolves.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Wolverhampton} className="team-logo" alt="logo" /></a>
                 </section>
+                {/* <div className="intro">
+                    <h6>Link to Official Team Page</h6>
+                </div> */}
 
             </HeaderWrapper>
         );
