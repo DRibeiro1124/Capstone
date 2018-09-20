@@ -25,7 +25,7 @@ import Wolverhampton from '../images/WolverhamptonLogo.svg'
 
 
 const HeaderWrapper = styled.div`
-    margin: auto;
+    // margin: auto;
     // these are the 4 main colors that are going to be used
     background-color: #75fa93;
     // background-color: #32063A;
@@ -41,8 +41,6 @@ const HeaderWrapper = styled.div`
     
     .EPL-logo {
         height: 9em;
-        display: flex;
-        // background-color: #D62E55;
     }
     
     .team-logo {
@@ -52,13 +50,15 @@ const HeaderWrapper = styled.div`
     }
     
     a {
-        justify-content: center;
+        display: flex;
         align-self: center;
     }
 
     .teams {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
+        width: auto;
     }
 
 `

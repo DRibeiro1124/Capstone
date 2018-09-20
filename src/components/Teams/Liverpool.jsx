@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BrightonLogo from '../../images/BrightonLogo.svg'
+import LiverpoolLogo from '../../images/LiverpoolLogo.svg'
 import styled from 'styled-components'
 
 const TeamWrapper = styled.div`
@@ -14,7 +14,7 @@ const TeamWrapper = styled.div`
     border-radius: 1em;
     height: 14em;
     width: 12em;
-    background: #1E54A0;
+    background: #A92D2A;
     color: #F7F9FC;
     
 }
@@ -36,20 +36,19 @@ const TeamWrapper = styled.div`
 
 
 
-class Brighton extends Component {
+class Liverpool extends Component {
     render() {
         return (
 
             <TeamWrapper>
                 <div className="main">
-                    <p>Brighton & Hove</p>
-                    <img src={BrightonLogo} className="team-logo" alt="logo" />
-                    <p>Albion FC</p>
+                    <p>Liverpool</p>
+                    <img src={LiverpoolLogo} className="team-logo" alt="logo" />
+                    <p>Football Club</p>
                 </div>
             </TeamWrapper>
         );
     }
 }
 
-export default Brighton;
-
+export default Liverpool;

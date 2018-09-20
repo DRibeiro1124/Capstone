@@ -5,6 +5,8 @@ const NavBarWrapper = styled.div `
 ul {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto;
     background: #32063A;
     color: white;
     list-style-type: none;
@@ -13,10 +15,8 @@ ul {
 }
 
 li {
-    // font-family: 'Work Sans', sans-serif;
-    // font-family: 'Josefin Sans', sans-serif;
     font-family: 'Comfortaa', cursive;
-    // font-family: 'Cinzel', serif;
+    
 }
 
 `

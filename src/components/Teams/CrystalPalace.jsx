@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BrightonLogo from '../../images/BrightonLogo.svg'
+import CrystalPalaceLogo from '../../images/CrystalPalaceLogo.svg'
 import styled from 'styled-components'
 
 const TeamWrapper = styled.div`
@@ -14,7 +14,7 @@ const TeamWrapper = styled.div`
     border-radius: 1em;
     height: 14em;
     width: 12em;
-    background: #1E54A0;
+    background: #194A92;
     color: #F7F9FC;
     
 }
@@ -28,28 +28,27 @@ const TeamWrapper = styled.div`
 
 .team-logo {
     height: 6em;
-    background: #F7F9FC;
+    background: #DC4D34;
     padding: 5px;
 }
 
 `
 
 
-
-class Brighton extends Component {
+class CrystalPalace extends Component {
     render() {
         return (
 
             <TeamWrapper>
                 <div className="main">
-                    <p>Brighton & Hove</p>
-                    <img src={BrightonLogo} className="team-logo" alt="logo" />
-                    <p>Albion FC</p>
+                    <p>Crystal Palace</p>
+                    <img src={CrystalPalaceLogo} className="team-logo" alt="logo" />
+                    <p>Football Club</p>
                 </div>
             </TeamWrapper>
         );
     }
 }
 
-export default Brighton;
+export default CrystalPalace;
 
