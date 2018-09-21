@@ -50,17 +50,12 @@ const HeaderWrapper = styled.div`
         justify-content: space-around;
     }
     
-    
-    a {
-        display: flex;
-        align-self: center;
-    }
 
     .teams {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        width: auto;
+        align-items: center;
     }
 
     .intro {
@@ -75,7 +70,38 @@ class Header extends Component {
             <HeaderWrapper>
                 <section className="teams">
                     <img src={EPL_logo} className="EPL-logo" alt="logo" />
-                    <a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Arsenal} className="team-logo" alt="logo" /></a>
+                    <img src={Arsenal} className="team-logo" alt="logo" />
+                    <img src={Bournemouth} className="team-logo" alt="logo" />
+                    <img src={Brighton} className="team-logo" alt="logo" />
+                    <img src={Burnley} className="team-logo" alt="logo" />
+                    <img src={CardiffCity} className="team-logo" alt="logo" />
+                    <img src={Chelsea} className="team-logo" alt="logo" />
+                    <img src={Everton} className="team-logo" alt="logo" />
+                    <img src={Fulham} className="team-logo" alt="logo" />
+                    <img src={HuddersfieldTown} className="team-logo" alt="logo" />
+                    <img src={LeicesterCity} className="team-logo" alt="logo" />
+                    <img src={Liverpool} className="team-logo" alt="logo" />
+                    <img src={ManchesterCity} className="team-logo" alt="logo" />
+                    <img src={ManchesterUnited} className="team-logo" alt="logo" />
+                    <img src={NewcastleUnited} className="team-logo" alt="logo" />
+                    <img src={Southampton} className="team-logo" alt="logo" />
+                    <img src={TottenhamSpurs} className="team-logo" alt="logo" />
+                    <img src={Watford} className="team-logo" alt="logo" />
+                    <img src={WestHamUnited} className="team-logo" alt="logo" />
+                    <img src={Wolverhampton} className="team-logo" alt="logo" />
+                </section>
+
+            </HeaderWrapper>
+        );
+    }
+}
+
+export default Header;
+
+// Save this for later
+{/* <section className="teams">
+                    <img src={EPL_logo} className="EPL-logo" alt="logo" />
+                    <a href="https://www.arsenal.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Arsenal} className="team-logo" alt="logo" />
                     <a href="https://www.afcb.co.uk/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Bournemouth} className="team-logo" alt="logo" /></a>
                     <a href="https://www.brightonandhovealbion.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Brighton} className="team-logo" alt="logo" /></a>
                     <a href="http://www.burnleyfootballclub.com/?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src={Burnley} className="team-logo" alt="logo" /></a>
@@ -98,11 +124,4 @@ class Header extends Component {
                 </section>
                 {/* <div className="intro">
                     <h6>Link to Official Team Page</h6>
-                </div> */}
-
-            </HeaderWrapper>
-        );
-    }
-}
-
-export default Header;
+                </div> */} 

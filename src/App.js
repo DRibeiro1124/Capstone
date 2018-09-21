@@ -38,6 +38,7 @@ class App extends Component {
         <section>
           <HomePage />
         </section>
+        
         <section>
           {this.state.data.map((data, i) => {
             console.log(data)
