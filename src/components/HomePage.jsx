@@ -14,8 +14,32 @@ const HomePageWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: center;
 }
-`
 
+.main-table {
+    border: 2px solid red;
+    display: flex;
+}
+
+.main-table th {
+    border: 1px solid blue;
+    justify-content: center;
+}
+
+
+
+
+.results td {
+    display: flex;
+    justify-content: space-between;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+`
 
 class HomePage extends Component {
 
@@ -28,26 +52,55 @@ class HomePage extends Component {
 
     componentDidMount() {
         fetch(`${base_URL}standings/1204?${api_key}`)
-          .then(resp => resp.json())
-          .then(data => {
-            console.log("works?", data);
-            this.setState ({ 
-              data: data
+            .then(resp => resp.json())
+            .then(data => {
+                console.log("works?", data);
+                this.setState({
+                    data: data
+                })
+
             })
-            
-          })
-      }
-    
+    }
+
 
     render() {
         return (
             <HomePageWrapper>
                 <div>
                     <h1>2018/19 English Premier League Standings</h1>
+                    <table className="main-table">
+                        <tbody className="main-body">
+                            <thead className="main-head"> 
+                                <tr>
+                                    <th>Position</th>
+                                    <th>Club</th>
+                                    <th>MP</th>
+                                    <th>Wins</th>
+                                    <th>Draws</th>
+                                    <th>Losses</th>
+                                    <th>GF</th>
+                                    <th>GA</th>
+                                    <th>GD</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                        </tbody>
+                    </table>
                     {this.state.data.map((data, i) => {
                         console.log(data)
                         return (
-                            <h6 key={i}>{data.team_name}</h6>
+                            <table key={i} className="results">
+                                {/* <td>{data.position}</td>
+                                <td>{data.team_name}</td>
+                                <td>{data.overall_gp}</td>
+                                <td>{data.overall_w}</td>
+                                <td>{data.overall_d}</td>
+                                <td>{data.overall_l}</td>
+                                <td>{data.overall_gs}</td>
+                                <td>{data.overall_ga}</td>
+                                <td>{data.gd}</td>
+                                <td>{data.points}</td> */}
+                            </table>
                         )
                     })}
                 </div>
