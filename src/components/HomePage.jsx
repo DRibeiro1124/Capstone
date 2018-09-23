@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-// 
+
 
 const base_URL = "http://api.football-api.com/2.0/"
 const api_key = "Authorization=565ec012251f932ea4000001fa542ae9d994470e73fdb314a8a56d76"
@@ -15,28 +15,21 @@ const HomePageWrapper = styled.div`
     justify-content: center;
 }
 
-.main-table {
-    border: 2px solid red;
-    display: flex;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-.main-table th {
-    border: 1px solid blue;
-    justify-content: center;
+th, td {
+    padding: 5px;
 }
 
-
-
-
-.results td {
-    display: flex;
-    justify-content: space-between;
+table,th {
+    width: 100%;
 }
 
-.results {
-    display: flex;
-    justify-content: center;
-    margin: 2em;
+th {
+    text-align: left;
 }
 
 `
@@ -46,17 +39,17 @@ class HomePage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            teams: []
         }
     };
 
     componentDidMount() {
         fetch(`${base_URL}standings/1204?${api_key}`)
             .then(resp => resp.json())
-            .then(data => {
-                console.log("works?", data);
+            .then(teams => {
+                console.log("works?", teams);
                 this.setState({
-                    data: data
+                    teams: teams
                 })
 
             })
@@ -68,41 +61,41 @@ class HomePage extends Component {
             <HomePageWrapper>
                 <div>
                     <h1>2018/19 English Premier League Standings</h1>
-                    <table className="main-table">
-                        <tbody className="main-body">
-                            <thead className="main-head"> 
-                                <tr>
-                                    <th>Position</th>
-                                    <th>Club</th>
-                                    <th>MP</th>
-                                    <th>Wins</th>
-                                    <th>Draws</th>
-                                    <th>Losses</th>
-                                    <th>GF</th>
-                                    <th>GA</th>
-                                    <th>GD</th>
-                                    <th>Points</th>
-                                </tr>
-                            </thead>
+                    <table className="table">
+                        <thead className="head">
+                            <tr>
+                                <th>Club</th>
+                                <th>Position</th>
+                                <th>MP</th>
+                                <th>Wins</th>
+                                <th>Draws</th>
+                                <th>Losses</th>
+                                <th>GF</th>
+                                <th>GA</th>
+                                <th>GD</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.state.teams.sort(function (a, b) { return a.position - b.position }).map((teams, i) => {
+                                console.log(teams)
+                                return (
+                                    <tr key={i}>
+                                        <td>{teams.team_name}</td>
+                                        <td>{teams.position}</td>
+                                        <td>{teams.overall_gp}</td>
+                                        <td>{teams.overall_w}</td>
+                                        <td>{teams.overall_d}</td>
+                                        <td>{teams.overall_l}</td>
+                                        <td>{teams.overall_gs}</td>
+                                        <td>{teams.overall_ga}</td>
+                                        <td>{teams.gd}</td>
+                                        <td>{teams.points}</td>
+                                    </tr>
+                                )
+                            })}
                         </tbody>
                     </table>
-                    {this.state.data.map((data, i) => {
-                        console.log(data)
-                        return (
-                            <table key={i} className="results">
-                                {/* <td>{data.position}</td>
-                                <td>{data.team_name}</td>
-                                <td>{data.overall_gp}</td>
-                                <td>{data.overall_w}</td>
-                                <td>{data.overall_d}</td>
-                                <td>{data.overall_l}</td>
-                                <td>{data.overall_gs}</td>
-                                <td>{data.overall_ga}</td>
-                                <td>{data.gd}</td>
-                                <td>{data.points}</td> */}
-                            </table>
-                        )
-                    })}
                 </div>
             </HomePageWrapper>
         );
@@ -120,6 +113,7 @@ export default HomePage;
     <LeicesterCity /> <Liverpool /> <ManchesterCity /> <ManchesterUnited /> <NewcastleUnited />
     <Southampton /> <Tottenham /> <Watford /> <WestHam /> <Wolverhampton />
 </div> */}
+
 
 // import Arsenal from './Teams/Arsenal.jsx';
 // import Bournemouth from './Teams/Bournemouth.jsx';
@@ -141,3 +135,7 @@ export default HomePage;
 // import Watford from './Teams/Watford';
 // import WestHam from './Teams/WestHam';
 // import Wolverhampton from './Teams/Wolverhampton';
+
+
+
+

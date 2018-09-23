@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+
 const NavBarWrapper = styled.div`
 ul {
     display: flex;
@@ -34,11 +35,12 @@ class NavBar extends Component {
                 <div>
                     <ul>
                         <li>Home</li>
-                        <li>Fixtures</li>
-                        <li>Current Stats</li>
-                        <li>Table</li>
-                        <li>Players</li>
-                        <li>Managers</li>
+                        <li>Teams</li>
+                        {/* <li>Fixtures</li> */}
+                        {/* <li>Current Stats</li> */}
+                        {/* <li>Table</li> */}
+                        {/* <li>Players</li> */}
+                        {/* <li>Managers</li> */}
                     </ul>
                 </div>
 

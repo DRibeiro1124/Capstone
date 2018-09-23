@@ -5,18 +5,31 @@ import NavBar from './components/NavBar.jsx';
 import HomePage from './components/HomePage.jsx';
 
 
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Southampton from './components/Teams/Southampton';
+
+
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <NavBar />
-        <section>
-          <HomePage />
-        </section>
-        
-      </div>
+      <Router>
+        <div className="App">
+          <section>
+            <Header />
+          </section>
+          <section>
+            <NavBar />
+          </section>
+          <section>
+          <Switch>
+              <Route path="/" exact component={HomePage} />
+              
+            </Switch>
+          </section>
+        </div>
+      </Router>
     );
   }
 }
