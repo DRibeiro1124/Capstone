@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+// import logo from '../images/EPL-Logo1.png'
+
 
 
 const base_URL = "http://api.football-api.com/2.0/"
@@ -9,29 +11,42 @@ const api_key = "Authorization=565ec012251f932ea4000001fa542ae9d994470e73fdb314a
 
 const HomePageWrapper = styled.div`
 
-.all-teams {
+.league-table {
+    border: 2px solid black;
+}
+
+.main-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th, td {
+    flex-direction: column;
+    margin: 0 25px 0 25px;
     padding: 5px;
+
 }
 
-table,th {
-    width: 100%;
+.main-container th {
+    background-color: #32063A;
+    color: #D62E55;
+    font-family: 'Comfortaa', cursive;
 }
 
-th {
-    text-align: left;
+td {
+    background-color: #D62E55;
+    color: white;
+    font-family: 'Comfortaa', cursive;
 }
 
+.logo {
+    
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.glossary {
+    display: flex;
+    flex-direction: column;
+}
 `
 
 class HomePage extends Component {
@@ -59,21 +74,22 @@ class HomePage extends Component {
     render() {
         return (
             <HomePageWrapper>
-                <div>
+                <div className="main-container">
                     <h1>2018/19 English Premier League Standings</h1>
-                    <table className="table">
-                        <thead className="head">
+                    {/* <img src={logo} className="logo" alt="logo" /> */}
+                    <table className="league-table">
+                        <thead className="table-header">
                             <tr>
                                 <th>Club</th>
-                                <th>Position</th>
-                                <th>MP</th>
-                                <th>Wins</th>
-                                <th>Draws</th>
-                                <th>Losses</th>
+                                <th>Pos</th>
+                                <th>GP</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
                                 <th>GF</th>
                                 <th>GA</th>
                                 <th>GD</th>
-                                <th>Points</th>
+                                <th>P</th>
                             </tr>
                         </thead>
                         <tbody>

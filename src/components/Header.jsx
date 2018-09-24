@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import styled from 'styled-components'
-import EPL_logo from '../images/EPL_Logo1.png'
+import logo from '../images/EPL-Logo.svg'
 import Arsenal from '../images/ArsenalLogo.svg'
 import Bournemouth from '../images/BournemouthLogo.svg'
 import Brighton from '../images/BrightonLogo.svg'
@@ -18,7 +18,7 @@ import ManchesterCity from '../images/ManchesterCityLogo.svg'
 import ManchesterUnited from '../images/ManchesterUnitedLogo.svg'
 import NewcastleUnited from '../images/NewcastleUnitedLogo.svg'
 import Southampton from '../images/SouthamptonLogo.svg'
-import TottenhamSpurs from '../images/TottenhamSpursLogo.svg'
+import TottenhamSpurs from '../images/SpursLogo.svg'
 import Watford from '../images/WatfordLogo.svg'
 import WestHamUnited from '../images/WestHamUnitedLogo.svg'
 import Wolverhampton from '../images/WolverhamptonLogo.svg'
@@ -27,8 +27,8 @@ import Wolverhampton from '../images/WolverhamptonLogo.svg'
 const HeaderWrapper = styled.div`
     // margin: auto;
     // these are the 4 main colors that are going to be used
-    background-color: #75fa93;
-    // background-color: #32063A;
+    // background-color: #75fa93;
+    background-color: #32063A;
     // background-color: #D62E55;
     // background-color: #6CEEFC;
 
@@ -40,8 +40,9 @@ const HeaderWrapper = styled.div`
     }
     
     .EPL-logo {
-        height: 11em;
-
+        height: 9em;
+        margin-left: -1em;
+        background-color: #32063A;
     }
     
     .team-logo {
@@ -69,13 +70,14 @@ class Header extends Component {
         return (
             <HeaderWrapper>
                 <section className="teams">
-                    <img src={EPL_logo} className="EPL-logo" alt="logo" />
+                    <img src={logo} className="EPL-logo" alt="logo" />
                     <img src={Arsenal} className="team-logo" alt="logo" />
                     <img src={Bournemouth} className="team-logo" alt="logo" />
                     <img src={Brighton} className="team-logo" alt="logo" />
                     <img src={Burnley} className="team-logo" alt="logo" />
                     <img src={CardiffCity} className="team-logo" alt="logo" />
                     <img src={Chelsea} className="team-logo" alt="logo" />
+                    <img src={CrystalPalace} className="team-logo" alt="logo" />
                     <img src={Everton} className="team-logo" alt="logo" />
                     <img src={Fulham} className="team-logo" alt="logo" />
                     <img src={HuddersfieldTown} className="team-logo" alt="logo" />

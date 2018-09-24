@@ -7,7 +7,6 @@ import HomePage from './components/HomePage.jsx';
 
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Southampton from './components/Teams/Southampton';
 
 
 class App extends Component {
@@ -25,6 +24,7 @@ class App extends Component {
           <section>
           <Switch>
               <Route path="/" exact component={HomePage} />
+              {/* <Route path="/:teams" exact component={Teams} /> */}
               
             </Switch>
           </section>
